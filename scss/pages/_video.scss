@@ -1,6 +1,6 @@
-// Utils
+
+@use "../utils/variables" as *;
 @use "../utils/mixin" as *;
-@use "../utils/_mixin" as *;
 
 // Base
-@use "../base/_resets" as *;
+@use "../base/resets" as *;

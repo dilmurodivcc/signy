@@ -1,6 +1,34 @@
-// Utils
-@use "../utils/_variables" as *;
-@use "../utils/_mixin" as *;
+
+@use "../utils/variables" as *;
+@use "../utils/mixin" as *;
 
 // Base
-@use "../base/_resets" as *;
+@use "../base/resets" as *;
+
+.btn-border {
+  border: 2px solid #1064e5;
+  border-radius: 43px;
+  padding: 11px 32px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+}
+
+.btn {
+  border-radius: 45px;
+  border: none;
+  padding: 11px 32px;
+  background: #1064e5;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}

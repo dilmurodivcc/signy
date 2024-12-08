@@ -2,6 +2,7 @@
 @use "utils/_variables" as *;
 @use "utils/_mixin" as *;
 
+
 // Base
 @use "base/_resets" as *;
 
@@ -23,3 +24,4 @@
 
 // Media
 @use "media/_indexRES" as *;
+@use "media/_blogRES" as *;
