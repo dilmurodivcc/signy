@@ -1,6 +1,209 @@
-// Utils
-@use "../utils/variables" as *;
-@use "../utils/mixin" as *;
 
-// Base
-@use "../base/resets" as *;
+.stran{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    .pro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        width: 90%;
+        b{
+            font-size: 40px;
+        }
+    }
+}
+.pro-0{
+    width: 100%;
+    height: 60vh;
+    margin-top: 10px;
+    background-image: url(../assets/images/nac-0.svg);
+    background-position: center;
+    background-size: cover;
+   
+}
+.pro-1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    p{
+        font-size: 18px;
+    }
+}
+.idey{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40vh;
+    .idey-0{
+        width: 45%;
+        height: 100%;
+        background-image: url(../assets/images/po-0.svg);
+        background-position: center;
+        background-size: cover;
+    }
+    .idey-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 100%;
+       
+    }
+}
+.idey-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 60%;
+    .idey-3{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+        height: 40%;
+        b{
+            font-size: 20px;
+        }
+    }
+}
+.druzya{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    b{
+        font-size: 40px;
+    }
+    .nova{
+        width: 80%;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        height: 20vh;
+        margin-top: 40px;
+       
+    }
+}
+.nov{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    height: 100%;
+   
+}
+.novosti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+   
+    background-color: rgba(216, 241, 240, 1);
+    b{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    p{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}
+.fox{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    input{
+        width: 20vw;
+        margin-top: 12px;
+        height: 7vh;
+        border-radius: 30px;
+        border: 1px solid rgba(16, 100, 229, 1);
+    }
+}
+.bhj{
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    margin-top: 7px;
+    background-color: rgba(16, 100, 229, 1);
+    &:hover{
+        background-color: rgb(54, 104, 177);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 800px){
+   .druzya{
+    .nova{
+        width: 100%;
+    }
+   }
+   .nov{
+    width: 12%;
+   }
+   .idey-2{
+    width: 100%;
+    height: 80%;
+   }
+   .bhj{
+    margin-top: 10px;
+   }
+   .fox{
+    input{
+        width: 35vw;
+    }
+   }
+ }
+ @media screen and (max-width: 600px){
+    .idey{
+        height: 80vh;
+        flex-direction: column;
+        .idey-0{
+            width: 100%;
+        }
+        .idey-1{
+            width: 100%;
+        }
+       
+    }
+    .nova{
+        .nop{
+            display: none;
+        }
+    }
+    .novosti{
+        b{
+            font-size: 30px;
+            width: 60%;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+            width: 60%;
+            text-align: center;
+        }
+    }
+    .fox{
+        flex-direction: column;
+        input{
+            width: 60vw;
+        }
+    }
+    .bhj{
+        width: 35vw;
+    }
+}
+ 
+
