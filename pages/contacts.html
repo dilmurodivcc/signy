@@ -17,7 +17,255 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
+    <div class="container" style="margin-bottom: 20px">
+      <header id="navbar">
+        <a href="../index.html">
+          <img src="../assets/icons/header-logo.svg" alt="" />
+        </a>
+        <nav>
+          <a href="./faq.html">
+            0 800 750 643 <img src="../assets/icons/arrow-down.svg" alt="" />
+          </a>
+          <a href="./about-us.html">
+            ПРО НАС
+            <img src="../assets/icons/arrow-down.svg" alt="" />
+          </a>
+          <a href="./blog.html"> ЦЕНЫ </a>
+          <a href="./contacts.html"> КОНТАКТЫ </a>
+          <button class="btn-border">Вход</button>
+          <button class="btn">регистрация</button>
+          <a href="./faq.html">
+            Рус
+            <img src="../assets/icons/arrow-down.svg" alt="" />
+          </a>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <aside>
+        <p class="title">Signy / Контакты</p>
+      </aside>
+      <main>
+        <h1 class="h1">Наши контакты</h1>
+        <p class="description">
+          Мы всегда рады ответить на ваши вопросы и развивать <br />
+          эффективное сотрудничество по всем вопросам,<br />
+          связанным с электронным документооборотом.
+        </p>
+        <div class="content">
+          <div class="left-section">
+            <div class="contact-info">
+              <p><i class="icon">📞</i> 0 800 750 643</p>
+              <p><i class="icon"></i> +3 044 334 56 43</p>
+              <p><i class="icon"></i> +3 044 338 86 43</p>
+              <p><i class="icon">✉️</i> infosmartsign@smarttender.biz</p>
+              <p><i class="icon">📍</i> пр-т Бажана, 14 A Киев, 02072</p>
+            </div>
+          </div>
+          <style>
+            .Signy {
+              position: relative;
+              left: 15px;
+            }
+
+            .left-section {
+              margin-top: 10px;
+              line-height: 30px;
+            }
+
+            .description {
+              margin-top: 50px;
+              line-height: 25px;
+            }
+
+            .pagen {
+           margin-top: -150px;
+            }
+
+            .form-container {
+              padding: 30px;
+              border-radius: 8px;
+              width: 400px;
+              margin-left: -25px;
+              margin-top: -50px;
+            }
+
+            h2 {
+              text-align: center;
+              font-size: 30px;
+              position: relative;
+              left: -20px;
+              color: #333;
+              margin-bottom: 20px;
+            }
+
+            /* Form styles */
+            .contact-form {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+            }
+
+            .form-group {
+              display: flex;
+              flex-direction: column;
+            }
+
+            label {
+              font-size: 14px;
+              color: #555;
+              margin-bottom: 5px;
+            }
+
+            input,
+            textarea {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #110b0b;
+              border-radius: 20px;
+              font-size: 14px;
+              background-color: #f9f9f9;
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+              color: #aaa;
+            }
+
+            input:focus,
+            textarea:focus {
+              border-color: #007bff;
+              outline: none;
+              background-color: #fff;
+            }
+
+            textarea {
+              resize: none;
+              height: 80px;
+            }
+
+            .contact-form button {
+              width: 217px;
+              height: 50px;
+              padding: 12px;
+              background-color: #1064e5;
+              color: #ffffff;
+              border: none;
+              border-radius: 20px;
+              font-size: 16px;
+              text-transform: uppercase;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+              background-color: #0056b3;
+            }
+
+            @media screen and (max-width: 768px) {
+              .content {
+                flex-direction: column;
+              }
+
+              .form-container {
+                width: 90%;
+              }
+
+              iframe {
+                height: 250px;
+              }
+            }
+          </style>
+          <div class="right-section">
+            <iframe
+              class="pagen"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.928502859268!2d30.6052133160255!3d50.401699779468874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c84b5a92f61f%3A0xdeb53ed2e70795d2!2z0JrRgNCw0YHQvtCy0YHQutC40Lkg0L3QsNGB0L7QtNGLINC_0LDRgNC40YfQuNC90LAsIDE0LCDQmtCw0LvQuNC90L7QstCwLCAwMjA3Mg!5e0!3m2!1sru!2sua!4v1691004521033!5m2!1sru!2sua"
+              width="600px"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <h2>...или напишите нам:</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Имя*:</label>
+              <input type="text" id="name" placeholder="Иван" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Электронная почта*:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="ivan@mail.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон*:</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="+38 000 000 00 00"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение:</label>
+              <textarea id="message" placeholder="введите тут"></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="firstline">
+          <div class="left">
+            <div class="logo">
+
+              <img src="../assets/icons/footer-logo.svg" alt="" />
+              <p style="margin-top: 104px;" class="opacity">© 2020 Signy</p>
+            </div>
+            <div class="pages">
+              <div class="pages-1">
+                <a href="./about-us.html">Про нас</a>
+                <a href="./blog.html" style="margin-bottom: 30px;">Цены</a> 
+                <a href="./video.html">Вход</a>
+                <a href="./faq.html">Регистрация</a>
+                <p style="margin-top: 12px;" class="opacity">Договір оферти</p>
+              </div>
+              <div class="pages-2">
+                <a href="./blog_post.html">Блог</a>
+                <a href="./contacts.html">Контакты</a>
+                <p style="margin-top: 98px;" class="opacity">Безпека сервісу</p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="right-1">
+              <a href="mailto:infosmartsign@smarttender.biz">infosmartsign@smarttender.biz</a> <br>
+              <a href="httsp://www.facebook.com">Facebook</a>
+            </div>
+            <div class="right-2">
+              <p>пр-т Миколи Бажана, 14 А </p>
+              <p>Київ, 02072</p>
+              <p>0 800 750643</p>
+              <p>+380 44 334 56 43</p>
+              <p>+380 44 338 86 43</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="../app.js"></script>
   </body>
 </html>

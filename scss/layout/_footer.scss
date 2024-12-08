@@ -1,7 +1,85 @@
-
 @use "../utils/variables" as *;
 @use "../utils/mixin" as *;
 
 // Base
 @use "../base/resets" as *;
+
+footer {
+  background-color: #061224;
+  padding: 44px 0;
+  .container {
+    display: flex;
+
+    align-items: start;
+    justify-content: space-between;
+  }
+  .opacity{
+    opacity: 0.4;
+  }
+  .firstline {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .left {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 120px;
+  }
+
+  a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: #fff;
+  }
+}
+
+footer {
+  .pages {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 47px;
+  }
+  .pages-1 {
+    display: flex;
+    align-items: start;
+    align-content: start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .pages-2 {
+    display: flex;
+    align-items: start;
+    align-content: start;
+    flex-direction: column;
+    gap: 4px;
+  }
+    p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #fff;
+    opacity: 0.8;
+  }
+}
+
+footer .right {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 70px;
+  .right-1,
+  .right-2 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+}
 
