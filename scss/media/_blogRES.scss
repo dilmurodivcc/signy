@@ -1,0 +1,105 @@
+// Utils
+@use "../utils/variables" as *;
+@use "../utils/mixin" as *;
+
+// Base
+@use "../base/resets" as *;
+
+
+@media (max-width: 300px) {
+    .container{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main-title h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .main-title .main-nav p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .blog-post {
+        flex-direction: column;
+    }
+
+    .blog-post .blog-img img {
+        width: 300px;
+        height: auto;
+    }
+
+    .blog-post__content h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .blog-post__content p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .blog-cards .cards .card {
+        width: 300px;
+        height: auto;
+    }
+
+    .pagination {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* 720px ekran o'lchamlari uchun responsive dizayn */
+@media (max-width: 720px) {
+    .main-title h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .main-title .main-nav p {
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    .blog-post {
+        flex-direction: column;
+    }
+
+    .blog-post .blog-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-post__content h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .blog-post__content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .blog-post__content .blog-tags p {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    .blog-cards {
+        gap: 30px;
+    }
+
+    .blog-cards .cards .card {
+        width: 100%;
+    }
+
+    .pagination {
+        gap: 20px;
+    }
+}
