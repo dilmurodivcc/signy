@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +8,13 @@
 
 body {
   overflow-x: hidden;
+  font-family: $font-family
+  ;
 }
 .container {
     max-width: 1232px;
     margin: 0 auto;
+    width: 100%;
 }
 a {
   text-decoration: none;
@@ -18,10 +23,7 @@ a {
 li {
   list-style: none;
 }
-button {
-  border: none;
-  outline: none;
-}
+
 input {
   border: none;
   outline: none;
