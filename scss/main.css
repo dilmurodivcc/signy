@@ -6,11 +6,13 @@
 
 body {
   overflow-x: hidden;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .container {
   max-width: 1232px;
   margin: 0 auto;
+  width: 100%;
 }
 
 a {
@@ -21,12 +23,353 @@ li {
   list-style: none;
 }
 
-button {
+input {
   border: none;
   outline: none;
 }
 
-input {
+.btn-border {
+  border: 2px solid #1064e5;
+  border-radius: 43px;
+  padding: 11px 32px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+}
+
+.btn {
+  border-radius: 45px;
   border: none;
-  outline: none;
+  padding: 11px 32px;
+  background: #1064e5;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 1242px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 10px;
+  transition: all 0.3s ease-in-out;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+header a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header.shrink {
+  top: 16px;
+  padding: 10px 10px;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  border-radius: 20px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  background-color: #deeefc;
+  height: 78vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.second {
+  height: 22vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: -10px;
+  margin-right: -100px;
+}
+.second .cards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.second h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 271%;
+  color: rgba(6, 18, 36, 0.9);
+}
+.second p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: rgba(6, 18, 36, 0.9);
+}
+
+.third {
+  padding: 60px 0px;
+  width: 100%;
+  background-color: #d8f1f0;
+}
+.third .container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.third .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.third .left {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+  flex-direction: column;
+}
+.third h2 {
+  font-family: "IBM Plex Serif", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: rgba(6, 18, 36, 0.9);
+}
+.third .text {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 5px;
+}
+.third p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #292d34;
+}
+.third .btn-border {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  text-transform: uppercase;
+  letter-spacing: 0 !important;
+  text-align: center;
+  padding: 15px 32px;
+  color: rgba(6, 18, 36, 0.9);
+}
+.third .btn {
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  padding: 15px 32px;
+  font-size: 14px;
+  line-height: 171%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.fourth .cards {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 98px;
+}
+.fourth .card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+  background: #deeefc;
+  padding: 32px;
+  border-radius: 4px;
+  width: 25%;
+  height: 350px;
+}
+.fourth .btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 167%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ebf5f6;
+  width: 100%;
+  padding: 11px !important;
+}
+.fourth h2 {
+  font-family: "IBM Plex Serif", sans-serif;
+  margin: 60px 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+}
+.fourth b {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 143%;
+  color: rgba(6, 18, 36, 0.9);
+}
+.fourth p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(6, 18, 36, 0.9);
+}
+.fourth span {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  color: rgba(6, 18, 36, 0.9);
+}
+
+.fifth {
+  background-color: #d8f1f0;
+  padding: 45px 0;
+}
+.fifth .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.fifth h2 {
+  font-weight: 500;
+  font-size: 73px;
+  line-height: 66%;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+}
+.fifth h3 {
+  font-family: "IBM Plex Serif", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+}
+.fifth p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+}
+
+.sixth {
+  padding: 45px 0;
+}
+.sixth .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.sixth h2 {
+  font-family: "IBM Plex Serif", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+}
+
+.carousel {
+  max-width: 1232px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel h2 {
+  margin-bottom: 20px;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 2149px;
+  gap: 136px;
+}
+
+.carousel-item {
+  flex: 0 0 189px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #007bff;
 }/*# sourceMappingURL=main.css.map */
